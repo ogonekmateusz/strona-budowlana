@@ -1,8 +1,5 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
+
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -12,7 +9,13 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <RouterLink to="/aboutUs">o nas</RouterLink>
+  <RouterLink to="/">Home</RouterLink>
 </template>
+
+<script setup lang="ts">
+import HelloWorld from './components/HelloWorld.vue'
+</script>
 
 <style scoped>
 .logo {
